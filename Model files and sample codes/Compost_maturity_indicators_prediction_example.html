@@ -14639,7 +14639,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Load the model</span>
-<span class="n">model_GI</span><span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">'Model_GI (Extra Trees).pkl'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">))</span>
+<span class="n">model_Carbon_nitrogen_ratio</span><span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">'Model_Carbon_nitrogen_ratio (Gradient Boosting).pkl'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14723,7 +14723,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <th>pH</th>
       <th>Temperature (℃)</th>
       <th>Moisture content (%)</th>
-      <th>GI</th>
+      <th>Carbon_nitrogen_ratio</th>
     </tr>
   </thead>
   <tbody>
@@ -14743,7 +14743,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.01</td>
       <td>38.09</td>
       <td>58.13</td>
-      <td>14.63</td>
+      <td>24.82</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14761,7 +14761,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>7.67</td>
       <td>56.83</td>
       <td>57.92</td>
-      <td>35.87</td>
+      <td>23.94</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14779,7 +14779,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.17</td>
       <td>58.29</td>
       <td>54.05</td>
-      <td>35.05</td>
+      <td>23.07</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14797,7 +14797,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.32</td>
       <td>59.11</td>
       <td>51.46</td>
-      <td>62.15</td>
+      <td>22.10</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14815,7 +14815,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.82</td>
       <td>63.00</td>
       <td>49.31</td>
-      <td>75.37</td>
+      <td>21.51</td>
     </tr>
   </tbody>
 </table>
@@ -14924,7 +14924,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <th>pH</th>
       <th>Temperature (℃)</th>
       <th>Moisture content (%)</th>
-      <th>GI</th>
+      <th>Carbon_nitrogen_ratio</th>
     </tr>
   </thead>
   <tbody>
@@ -14944,7 +14944,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.01</td>
       <td>38.09</td>
       <td>58.13</td>
-      <td>14.63</td>
+      <td>24.82</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14962,7 +14962,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>7.67</td>
       <td>56.83</td>
       <td>57.92</td>
-      <td>35.87</td>
+      <td>23.94</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14980,7 +14980,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.17</td>
       <td>58.29</td>
       <td>54.05</td>
-      <td>35.05</td>
+      <td>23.07</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14998,7 +14998,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.32</td>
       <td>59.11</td>
       <td>51.46</td>
-      <td>62.15</td>
+      <td>22.10</td>
     </tr>
     <tr>
       <th>4</th>
@@ -15016,7 +15016,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>8.82</td>
       <td>63.00</td>
       <td>49.31</td>
-      <td>75.37</td>
+      <td>21.51</td>
     </tr>
   </tbody>
 </table>
@@ -15049,7 +15049,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Load modeling dataset</span>
-<span class="n">X_train_df_GI</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'X_train_df_GI.xlsx'</span><span class="p">)</span>
+<span class="n">X_train_df_Carbon_nitrogen_ratio</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'X_train_df_Carbon_nitrogen_ratio.xlsx'</span><span class="p">)</span>
 
 <span class="c1">## Make sure that 'con_feature' includes the common feature columns for both the new dataset and the training dataset</span>
 <span class="n">con_feature</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Biochar type'</span><span class="p">,</span> <span class="s1">'Pyrolysis temperature (℃)'</span><span class="p">,</span> <span class="s1">'C/N'</span><span class="p">,</span> <span class="s1">'Surface area (m2/g)'</span><span class="p">,</span> <span class="s1">'Pore volume (cm3/g)'</span><span class="p">,</span>
@@ -15058,7 +15058,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="c1">## Loading example dataset</span>
 <span class="n">con_df_new</span> <span class="o">=</span> <span class="n">df_encoding</span><span class="p">[</span><span class="n">con_feature</span><span class="p">]</span>  <span class="c1"># 假设 df_encoding 已经加载</span>
-<span class="n">con_df_train</span> <span class="o">=</span> <span class="n">X_train_df_GI</span><span class="p">[</span><span class="n">con_feature</span><span class="p">]</span>
+<span class="n">con_df_train</span> <span class="o">=</span> <span class="n">X_train_df_Carbon_nitrogen_ratio</span><span class="p">[</span><span class="n">con_feature</span><span class="p">]</span>
 
 <span class="c1">## Define a function to compute the cosine similarity</span>
 <span class="k">def</span> <span class="nf">cosine_ad</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">X_train</span><span class="p">):</span>
@@ -15122,31 +15122,31 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.9399</td>
+      <td>0.9467</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0.9397</td>
+      <td>0.9465</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0.9399</td>
+      <td>0.9467</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0.9401</td>
+      <td>0.9468</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0.9399</td>
+      <td>0.9466</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>0.9404</td>
+      <td>0.9468</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>0.9395</td>
+      <td>0.9458</td>
     </tr>
   </tbody>
 </table>
@@ -15184,7 +15184,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <span class="c1">## Get actual and predicted values</span>
 <span class="n">Y_actual</span> <span class="o">=</span> <span class="n">df_encoding</span><span class="p">[</span><span class="n">Y_column</span><span class="p">]</span>  <span class="c1"># Actual values</span>
-<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">model_GI</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Predicted values</span>
+<span class="n">Y_pred</span> <span class="o">=</span> <span class="n">model_Carbon_nitrogen_ratio</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Predicted values</span>
 
 <span class="c1">## Create a DataFrame with both actual and predicted values</span>
 <span class="n">Predicted_result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -15261,45 +15261,45 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>GI_Predicted</th>
-      <th>GI_Actual</th>
+      <th>Carbon_nitrogen_ratio_Predicted</th>
+      <th>Carbon_nitrogen_ratio_Actual</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>24.55</td>
-      <td>14.63</td>
+      <td>24.87</td>
+      <td>24.82</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>30.11</td>
-      <td>35.87</td>
+      <td>24.60</td>
+      <td>23.94</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>37.98</td>
-      <td>35.05</td>
+      <td>23.50</td>
+      <td>23.07</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>42.93</td>
-      <td>62.15</td>
+      <td>20.41</td>
+      <td>22.10</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>48.73</td>
-      <td>75.37</td>
+      <td>18.82</td>
+      <td>21.51</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>79.97</td>
-      <td>102.98</td>
+      <td>17.31</td>
+      <td>19.54</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>84.98</td>
-      <td>114.55</td>
+      <td>16.50</td>
+      <td>13.10</td>
     </tr>
   </tbody>
 </table>
@@ -15355,17 +15355,17 @@ Performance Metrics:
     <tr>
       <th>0</th>
       <td>R2</td>
-      <td>0.680</td>
+      <td>0.710</td>
     </tr>
     <tr>
       <th>1</th>
       <td>RMSE</td>
-      <td>19.358</td>
+      <td>1.973</td>
     </tr>
     <tr>
       <th>2</th>
       <td>MAE</td>
-      <td>16.721</td>
+      <td>1.593</td>
     </tr>
   </tbody>
 </table>
